@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirect Buttons</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Signika+Negative&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/home.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Welcome to Sales Monitoring System</h1>
+    <div class="button-container">
+      <button
+        onclick="window.location.href='{{ url_for('mlogin')}}'"
+        class="redirect-button"
+      >
+        Manufacturer
+      </button>
+
+      <button
+        onclick="window.location.href='{{ url_for('wlogin')}}'"
+        class="redirect-button"
+      >
+        Wholesalers
+      </button>
+      <button
+        onclick="window.location.href='{{ url_for('slogin')}}'"
+        class="redirect-button"
+      >
+        Salesperson
+      </button>
+      <button
+        onclick="window.location.href='{{ url_for('dlogin')}}'"
+        class="redirect-button"
+      >
+        Dealer
+      </button>
+    </div>
+  </body>
+</html>

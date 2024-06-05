@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dealer Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Signika+Negative&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dealer.css') }}" />
+  </head>
+  <body>
+    <h1>Dealer Details</h1>
+
+    <div class="button-container">
+      <button
+        onclick="window.location.href='{{ url_for('Daccount')}}'"
+        class="redirect-button"
+      >
+        View Account Details
+      </button>
+      <button
+        onclick="window.location.href='{{ url_for('Dpayment')}}'"
+        class="redirect-button"
+      >
+        View Payment Details
+      </button>
+      <button
+        onclick="window.location.href='{{ url_for('Dpurchase')}}'"
+        class="redirect-button"
+      >
+        View Purchase Details
+      </button>
+      <button
+        onclick="window.location.href='{{ url_for('Dstock')}}'"
+        class="redirect-button"
+      >
+        View Stock Details
+      </button>
+      <button
+        onclick="window.location.href='place_order.html'"
+        class="redirect-button"
+      >
+        Place Order
+      </button>
+    </div>
+  </body>
+</html>

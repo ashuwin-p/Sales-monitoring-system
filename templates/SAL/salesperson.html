@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Salesperson Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Signika+Negative&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/salesperson.css') }}" />
+  </head>
+  <body>
+    <h1>Salesperson Details</h1>
+
+    <div class="button-container">
+      <button
+        onclick="window.location.href='{{ url_for('Ssales')}}'"
+        class="redirect-button"
+      >
+        My Sales
+      </button>
+    </div>
+  </body>
+</html>

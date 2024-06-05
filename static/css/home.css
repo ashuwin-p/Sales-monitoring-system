@@ -1,0 +1,46 @@
+/* styles.css */
+
+h1 {
+  margin-top: 60px;
+  font-size: 40px;
+  color: black;
+  font-family: 'Signika Negative', sans-serif;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+body {
+    background-color: rgba(255, 230, 0, 0.811);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .redirect-button {
+    font-family: 'Itim', cursive;
+    padding: 10px 20px;
+    margin: 15px;
+    font-size: 30px;
+    width: 250px;
+    height : 70px;
+    color: #fff;
+    background-color: #5c0000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .redirect-button:hover {
+    background-color: #e9e8d4;
+    color: black;
+    border: 5px solid #480800;
+  }
+  
